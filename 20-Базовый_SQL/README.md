@@ -1,3 +1,16 @@
+
+<table>
+  <tr>
+    <th>Задача 1</th>
+  </tr>
+  <tr><td>Отобразите все записи из таблицы company по компаниям, которые закрылись.</td></tr>
+  <tr><td></tr>```sql
+SELECT *
+FROM company
+WHERE status = 'closed'
+```</td>
+</table>
+
 |Задача 1|
 |---|
 |Отобразите все записи из таблицы company по компаниям, которые закрылись.|
@@ -93,19 +106,4 @@ SELECT *,
 FROM fund
 ```
 
-! **Language**
-  ! **Pros**
-    ! **Cons**
-! MarkedText
-  ! - Convenient editing of tables.
-  ! - Support for complex formatting inside cells.
-  ! - Ease of implementation.
-  ! - Easy-to-remember consistent syntax.
-  ! - Ease of editing in a non-English keyboard layout.
-  ! - The columns do not spread far to the right for horizontal scrolling and are not transferred to a new line.
-    ! - There is no broad support by third-party tools.
-! MarkDown
-  ! - Extensive support with various tools.
-  ! - A human-readable representation of simple tables.
-    ! - Difficulties with editing tables.
-    ! - Highly restricted cell contents.
+
