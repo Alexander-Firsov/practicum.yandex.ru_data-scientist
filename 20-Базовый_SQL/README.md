@@ -1,15 +1,17 @@
 
 <table>
-  <tr>
-    <th>Задача 1</th>
-  </tr>
-  <tr><td>Отобразите все записи из таблицы company по компаниям, которые закрылись.</td></tr>
-  <tr><td>
+<tr>
+<th>Задача 1</th>
+</tr>
+<tr><td>Отобразите все записи из таблицы company по компаниям, которые закрылись.</td></tr>
+<tr><td>
+
 ```sql
 SELECT *
 FROM company
 WHERE status = 'closed'
 ```
+
 </tr></td>
 </table>
 
