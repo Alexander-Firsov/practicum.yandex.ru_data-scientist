@@ -62,7 +62,7 @@ ORDER BY sum DESC
 
 |Задача 7|
 |---|
-|Составьте таблицу, в которую войдёт дата проведения раунда, а также минимальное и максимальное значения суммы инвестиций, привлечённых в эту дату.
+|Составьте таблицу, в которую войдёт дата проведения раунда, а также минимальное и максимальное значения суммы инвестиций, привлечённых в эту дату.  
 Оставьте в итоговой таблице только те записи, в которых минимальное значение суммы инвестиций не равно нулю и не равно максимальному значению.|
 
 ```sql
@@ -76,11 +76,12 @@ HAVING MIN(raised_amount) NOT IN (0, MAX(raised_amount))
 
 |Задача 8|
 |---|
-|Создайте поле с категориями:\
-    * Для фондов, которые инвестируют в 100 и более компаний, назначьте категорию high_activity.\
-    * Для фондов, которые инвестируют в 20 и более компаний до 100, назначьте категорию middle_activity.\
-    * Если количество инвестируемых компаний фонда не достигает 20, назначьте категорию low_activity.\
+|Создайте поле с категориями:  
+    * Для фондов, которые инвестируют в 100 и более компаний, назначьте категорию high_activity.  
+    * Для фондов, которые инвестируют в 20 и более компаний до 100, назначьте категорию middle_activity.  
+    * Если количество инвестируемых компаний фонда не достигает 20, назначьте категорию low_activity.  
     Отобразите все поля таблицы fund и новое поле с категориями.|
+
 
 ```sql
 SELECT *,
@@ -92,12 +93,19 @@ SELECT *,
 FROM fund
 ```
 
-! 
-  ! table
-    ! header
-! a
-  ! There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-    ! row
-! b
-  ! table 
-    ! row
+! **Language**
+  ! **Pros**
+    ! **Cons**
+! MarkedText
+  ! - Convenient editing of tables.
+  ! - Support for complex formatting inside cells.
+  ! - Ease of implementation.
+  ! - Easy-to-remember consistent syntax.
+  ! - Ease of editing in a non-English keyboard layout.
+  ! - The columns do not spread far to the right for horizontal scrolling and are not transferred to a new line.
+    ! - There is no broad support by third-party tools.
+! MarkDown
+  ! - Extensive support with various tools.
+  ! - A human-readable representation of simple tables.
+    ! - Difficulties with editing tables.
+    ! - Highly restricted cell contents.
