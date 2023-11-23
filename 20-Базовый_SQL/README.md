@@ -76,8 +76,28 @@ HAVING MIN(raised_amount) NOT IN (0, MAX(raised_amount))
 
 |Задача 8|
 |---|
-|Создайте поле с категориями:
-* Для фондов, которые инвестируют в 100 и более компаний, назначьте категорию high_activity.
-* Для фондов, которые инвестируют в 20 и более компаний до 100, назначьте категорию middle_activity.
-* Если количество инвестируемых компаний фонда не достигает 20, назначьте категорию low_activity.
-Отобразите все поля таблицы fund и новое поле с категориями.|
+|Создайте поле с категориями:\
+    * Для фондов, которые инвестируют в 100 и более компаний, назначьте категорию high_activity.\
+    * Для фондов, которые инвестируют в 20 и более компаний до 100, назначьте категорию middle_activity.\
+    * Если количество инвестируемых компаний фонда не достигает 20, назначьте категорию low_activity.\
+    Отобразите все поля таблицы fund и новое поле с категориями.|
+
+```sql
+SELECT *,
+    CASE
+        WHEN invested_companies < 20 THEN 'low_activity'
+        WHEN invested_companies < 100 THEN 'middle_activity'
+        WHEN invested_companies >= 100 THEN 'high_activity'
+    END AS Ы
+FROM fund
+```
+
+! 
+  ! table
+    ! header
+! a
+  ! There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+    ! row
+! b
+  ! table 
+    ! row
