@@ -11,19 +11,25 @@ SELECT *
 FROM company
 WHERE status = 'closed'
 ```
-
 </tr></td>
 </table>
 
-|Задача 1|
-|---|
-|Отобразите все записи из таблицы company по компаниям, которые закрылись.|
+<table>
+<tr>
+<th>Задача 2</th>
+</tr>
+<tr><td>Отобразите количество привлечённых средств для новостных компаний США. Используйте данные из таблицы `company`. Отсортируйте таблицу по убыванию значений в поле `funding_total`.</td></tr>
+<tr><td>
 
 ```sql
-SELECT *
+SELECT funding_total
 FROM company
-WHERE status = 'closed'
+WHERE category_code = 'news' AND country_code = 'USA'
+ORDER BY funding_total DESC
 ```
+</tr></td>
+</table>
+
 
 |Задача 2|
 |---|
