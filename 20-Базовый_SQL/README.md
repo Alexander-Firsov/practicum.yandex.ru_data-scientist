@@ -4,11 +4,11 @@
     <th>Задача 1</th>
   </tr>
   <tr><td>Отобразите все записи из таблицы company по компаниям, которые закрылись.</td></tr>
-  <tr><td></tr>```sql
+  <tr><td>```sql
 SELECT *
 FROM company
 WHERE status = 'closed'
-```</td>
+```</tr></td>
 </table>
 
 |Задача 1|
