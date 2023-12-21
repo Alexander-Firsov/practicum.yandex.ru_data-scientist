@@ -1,5 +1,5 @@
 label,best_param,time_fit,time_predict,roc_auc,best_model,param_grid,feature_importances,total_time
-tree_df1,"{'regressor__max_depth': 11, 'regressor__min_samples_leaf': 6, 'regressor__n_estimators': 40}",1.956512212753296,1.6780359745025637,0.9073176755416976,"Pipeline(steps=[('preprocessor',
+tree_df1,"{'regressor__max_depth': 11, 'regressor__min_samples_leaf': 6, 'regressor__n_estimators': 40}",1.4848065376281738,1.3962881565093994,0.9039692919955086,"Pipeline(steps=[('preprocessor',
                  ColumnTransformer(transformers=[('num',
                                                   Pipeline(steps=[('scaler',
                                                                    StandardScaler()),
@@ -30,26 +30,26 @@ tree_df1,"{'regressor__max_depth': 11, 'regressor__min_samples_leaf': 6, 'regres
                  RandomForestClassifier(max_depth=11, min_samples_leaf=6,
                                         n_estimators=40,
                                         random_state=111223))])","{'regressor__max_depth': [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], 'regressor__min_samples_leaf': [5, 6, 7, 8, 9, 10, 11, 12, 13, 14], 'regressor__n_estimators': [30, 40, 50, 100]}","                          score
-cat__Dependents        0.007390
-cat__SeniorCitizen     0.007589
-cat__is_male           0.007957
-cat__PaperlessBilling  0.007966
-cat__TechSupport       0.010613
-cat__StreamingMovies   0.010718
-cat__OnlineSecurity    0.011724
-cat__is_optic          0.012060
-cat__Partner           0.016370
-cat__StreamingTV       0.017093
-cat__DeviceProtection  0.017874
-cat__OnlineBackup      0.023498
-cat__PaymentMethod     0.023706
-num__Type              0.026946
-cat__MultipleLines     0.029682
-num__MonthlyCharges    0.095786
-num__TotalCharges      0.154517
-num__d_time            0.206486
-num__paid_periods      0.312025",7914.561297178268
-LogisticRegression_df1,"{'regressor__C': 10, 'regressor__max_iter': 100}",0.5029757022857666,0.1108732223510742,0.7898958900612231,"Pipeline(steps=[('preprocessor',
+cat__is_male           0.005576
+cat__Dependents        0.006616
+cat__PaperlessBilling  0.007762
+cat__SeniorCitizen     0.009267
+cat__OnlineSecurity    0.011295
+cat__TechSupport       0.011331
+cat__is_optic          0.011923
+cat__StreamingMovies   0.013255
+cat__StreamingTV       0.015774
+cat__Partner           0.016662
+cat__DeviceProtection  0.017406
+cat__PaymentMethod     0.021834
+cat__OnlineBackup      0.022701
+cat__MultipleLines     0.029665
+num__Type              0.033896
+num__MonthlyCharges    0.093949
+num__TotalCharges      0.142570
+num__d_time            0.215283
+num__paid_periods      0.313235",7914.561297178268
+LogisticRegression_df1,"{'regressor__C': 10, 'regressor__max_iter': 100}",0.06158924102783203,0.044893503189086914,0.7898958900612231,"Pipeline(steps=[('preprocessor',
                  ColumnTransformer(transformers=[('num',
                                                   Pipeline(steps=[('scaler',
                                                                    StandardScaler()),
@@ -107,7 +107,7 @@ cat__PaymentMethod_1       0.313236
 num__TotalCharges          0.324106
 num__MonthlyCharges        0.459292
 num__d_time                1.719909",874.5364825725555
-CatBoost_df1,"{'regressor__random_state': 111223, 'regressor__verbose': False}",4.738006114959717,1.8121435642242432,0.9396693782938133,"Pipeline(steps=[('preprocessor',
+CatBoost_df1,"{'regressor__random_state': 111223, 'regressor__verbose': False}",3.7605395317077637,1.5289409160614014,0.9400711947407673,"Pipeline(steps=[('preprocessor',
                  ColumnTransformer(transformers=[('num',
                                                   Pipeline(steps=[('scaler',
                                                                    StandardScaler()),
@@ -135,27 +135,27 @@ CatBoost_df1,"{'regressor__random_state': 111223, 'regressor__verbose': False}",
                                                    'StreamingMovies',
                                                    'MultipleLines'])])),
                 ('regressor',
-                 <catboost.core.CatBoostClassifier object at 0x7f02091ab370>)])","{'regressor__verbose': [False], 'regressor__random_state': [111223]}","                           score
-cat__Dependents         0.297528
-cat__OnlineSecurity     0.997766
-cat__PaperlessBilling   1.003237
-cat__is_male            1.027107
-cat__is_optic           1.458515
-cat__StreamingTV        1.633536
-cat__SeniorCitizen      1.665280
-cat__StreamingMovies    1.837718
-cat__DeviceProtection   1.873927
-cat__TechSupport        1.886161
-cat__OnlineBackup       1.958200
-cat__PaymentMethod      1.962592
-cat__Partner            2.280993
-cat__MultipleLines      3.212304
-num__Type               3.332457
-num__MonthlyCharges     5.947135
-num__TotalCharges       7.697944
-num__paid_periods      29.823003
-num__d_time            30.104596",38.242926597595215
-DummyClassifier_df1,{},1.7102859020233154,1.7404186725616455,0.5,"Pipeline(steps=[('preprocessor',
+                 <catboost.core.CatBoostClassifier object at 0x7fbf22d15130>)])","{'regressor__verbose': [False], 'regressor__random_state': [111223]}","                           score
+cat__Dependents         0.410439
+cat__is_male            0.924346
+cat__PaperlessBilling   0.993636
+cat__StreamingTV        1.244568
+cat__is_optic           1.324691
+cat__OnlineSecurity     1.420071
+cat__SeniorCitizen      1.448204
+cat__DeviceProtection   1.466767
+cat__TechSupport        1.542074
+cat__StreamingMovies    1.707588
+cat__PaymentMethod      1.881322
+cat__OnlineBackup       1.900896
+cat__Partner            2.139492
+cat__MultipleLines      3.239714
+num__Type               4.180066
+num__MonthlyCharges     5.820684
+num__TotalCharges       7.358071
+num__d_time            30.381530
+num__paid_periods      30.615839",38.242926597595215
+DummyClassifier_df1,{},1.3004226684570312,1.5997216701507568,0.5,"Pipeline(steps=[('preprocessor',
                  ColumnTransformer(transformers=[('num',
                                                   Pipeline(steps=[('scaler',
                                                                    StandardScaler()),
@@ -183,3 +183,92 @@ DummyClassifier_df1,{},1.7102859020233154,1.7404186725616455,0.5,"Pipeline(steps
                                                    'StreamingMovies',
                                                    'MultipleLines'])])),
                 ('regressor', DummyClassifier())])",{},,15.299877643585203
+tree_df2_test1,"{'regressor__max_depth': 11, 'regressor__min_samples_leaf': 6, 'regressor__n_estimators': 40}",0.33971667289733887,0.25835704803466797,0.9114067356368967,"Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('num',
+                                                  Pipeline(steps=[('scaler',
+                                                                   StandardScaler()),
+                                                                  ('imputer',
+                                                                   KNNImputer())]),
+                                                  ['Type', 'MonthlyCharges',
+                                                   'TotalCharges', 'd_time',
+                                                   'paid_periods']),
+                                                 ('cat',
+                                                  Pipeline(steps=[('encoder',
+                                                                   OrdinalEncoder(handle_unknown='use_encoded_value',
+                                                                                  unknown_value=-1)),
+                                                                  ('scaler',
+                                                                   StandardScaler()),
+                                                                  ('imputer',
+                                                                   KNNImputer())]),
+                                                  ['PaymentMethod',
+                                                   'MultipleLines'])])),
+                ('regressor',
+                 RandomForestClassifier(max_depth=11, min_samples_leaf=6,
+                                        n_estimators=40,
+                                        random_state=111223))])","{'regressor__max_depth': [11], 'regressor__min_samples_leaf': [6], 'regressor__n_estimators': [40]}","                        score
+cat__PaymentMethod   0.018142
+cat__MultipleLines   0.035720
+num__Type            0.046689
+num__MonthlyCharges  0.117879
+num__TotalCharges    0.169123
+num__d_time          0.276907
+num__paid_periods    0.335539",3.4469153881073
+LogisticRegression_df2_test1,"{'regressor__C': 10, 'regressor__max_iter': 100}",0.03235363960266113,0.021886825561523438,0.7794466018696655,"Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('num',
+                                                  Pipeline(steps=[('scaler',
+                                                                   StandardScaler()),
+                                                                  ('imputer',
+                                                                   KNNImputer())]),
+                                                  ['Type', 'MonthlyCharges',
+                                                   'TotalCharges', 'd_time',
+                                                   'paid_periods']),
+                                                 ('cat',
+                                                  Pipeline(steps=[('encoder',
+                                                                   OneHotEncoder(drop='first',
+                                                                                 handle_unknown='ignore',
+                                                                                 sparse_output=False)),
+                                                                  ('scaler',
+                                                                   StandardScaler()),
+                                                                  ('imputer',
+                                                                   KNNImputer())]),
+                                                  ['PaymentMethod',
+                                                   'MultipleLines'])])),
+                ('regressor', LogisticRegression(C=10, random_state=111223))])","{'regressor__max_iter': [100], 'regressor__C': [10]}","                           score
+num__Type              -1.985270
+num__paid_periods      -1.052046
+num__MonthlyCharges    -0.771678
+cat__MultipleLines_1.0 -0.357179
+cat__MultipleLines_nan -0.246632
+cat__PaymentMethod_2   -0.178978
+cat__PaymentMethod_3   -0.149799
+num__TotalCharges       0.202271
+cat__PaymentMethod_1    0.327287
+num__d_time             1.741308",1.0891788005828857
+CatBoost_df2_test1,{'regressor__verbose': False},2.24139404296875,0.2519392967224121,0.9400994398365039,"Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('num',
+                                                  Pipeline(steps=[('scaler',
+                                                                   StandardScaler()),
+                                                                  ('imputer',
+                                                                   KNNImputer())]),
+                                                  ['Type', 'MonthlyCharges',
+                                                   'TotalCharges', 'd_time',
+                                                   'paid_periods']),
+                                                 ('cat',
+                                                  Pipeline(steps=[('encoder',
+                                                                   OrdinalEncoder(handle_unknown='use_encoded_value',
+                                                                                  unknown_value=-1)),
+                                                                  ('scaler',
+                                                                   StandardScaler()),
+                                                                  ('imputer',
+                                                                   KNNImputer())]),
+                                                  ['PaymentMethod',
+                                                   'MultipleLines'])])),
+                ('regressor',
+                 <catboost.core.CatBoostClassifier object at 0x7fbf21bc1460>)])",{'regressor__verbose': [False]},"                         score
+cat__PaymentMethod    2.428681
+cat__MultipleLines    3.657331
+num__Type             4.733629
+num__MonthlyCharges   7.544424
+num__TotalCharges     9.890428
+num__d_time          35.291644
+num__paid_periods    36.453864",21.161195516586304
